@@ -10,7 +10,12 @@ public class WykazS {
     void addStudent(int nr , String name) throws DuplikatExcepation{
         for (Student s : wykaz){
             if(s.getIndex() == nr)
-                throw new DuplikatExcepation("It is duplicate \n Index : "+nr+" is exist");
+                throw new DuplikatExcepation(  "\n"+
+                                                   "\n!!!!!!!!!!!!!!!!!!!!!!!!"+
+                                                   "\n It is duplicate " +
+                                                   "\n Index : "+nr+" is exist"+
+                                                   "\n!!!!!!!!!!!!!!!!!!!!!!!!"+
+                                                   "\n");
         }
         wykaz.add(new Student(nr, name));
 

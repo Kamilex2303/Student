@@ -41,17 +41,22 @@ public class Main {
         ws.addGrade(189557, 3);
         ws.addGrade(189557, 4);
 
-        System.out.println("WYPISZ WSZYSTKICH: ");
+        System.out.println("All students : ");
         ws.print();
-        System.out.println("WYPISZ INDEX: 199200");
+        System.out.println();
+        System.out.println("Student with index : 199200");
         ws.print(199200);
-        System.out.println("Sortowanie wedlug imion");
+        System.out.println();
+        System.out.println("Sort by names : ");
         ws.sortujA();
         ws.print();
-        System.out.println("Sortowanie wedlug ocen");
+        System.out.println();
+        System.out.println("Sort by grades : ");
         ws.sortujI();
         ws.print();
-        System.out.println("iterator:");
+        System.out.println();
+        System.out.println("Iterator : ");
         ws.printRemove(4);
+        System.out.println();
     }
 }
