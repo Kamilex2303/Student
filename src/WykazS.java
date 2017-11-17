@@ -7,8 +7,14 @@ public class WykazS {
 
     ArrayList<Student> wykaz = new ArrayList<>();
 
-    void addStudent(int nr , String name){
-        wykaz.add(new Student(nr , name));
+    void addStudent(int nr , String name) throws DuplikatExcepation{
+        for (Student s : wykaz){
+            if(s.getIndex() == nr)
+                throw new DuplikatExcepation("duplikat");
+        }
+        wykaz.add(new Student(nr, name));
+
+
     }
 
     int getNumber(int nr){
