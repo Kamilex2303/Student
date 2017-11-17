@@ -13,7 +13,8 @@ public class Main {
             ws.addStudent(199200, "Marcin");
         }
         catch(DuplikatExcepation m){
-            m.printStackTrace();
+            System.out.println(m);
+
         }
         ws.addGrade(199200, 5);
         ws.addGrade(199200, 4);
@@ -23,15 +24,34 @@ public class Main {
 
         ws.addGrade(199201, 5);
         ws.addGrade(199201, 6);
+        ws.addGrade(199201, 5);
+        ws.addGrade(199201, 5);
 
         ws.addGrade(199204, 4);
         ws.addGrade(199204, 5);
+        ws.addGrade(199204, 5);
+        ws.addGrade(199204, 4);
 
 
         ws.addGrade(199205, 3);
+        ws.addGrade(199205, 3);
+        ws.addGrade(199205, 3);
 
         ws.addGrade(189557, 4);
+        ws.addGrade(189557, 3);
+        ws.addGrade(189557, 4);
 
-        ws.printRemove(2);
+        System.out.println("WYPISZ WSZYSTKICH: ");
+        ws.print();
+        System.out.println("WYPISZ INDEX: 199200");
+        ws.print(199200);
+        System.out.println("Sortowanie wedlug imion");
+        ws.sortujA();
+        ws.print();
+        System.out.println("Sortowanie wedlug ocen");
+        ws.sortujI();
+        ws.print();
+        System.out.println("iterator:");
+        ws.printRemove(4);
     }
 }
